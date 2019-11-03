@@ -2,7 +2,12 @@ import Phaser from 'phaser';
 
 export default {
     type: Phaser.AUTO,
-    parent: 'phaser-example',
-    width: 800,
-    height: 600,
+    backgroundColor: 0x222222,
+    scale: {
+        mode: Phaser.Scale.FIT,
+        autoCenter: Phaser.Scale.CENTER_BOTH,
+        parent: 'thegame',
+        width: 750,
+        height: 1334,
+    },
 };
